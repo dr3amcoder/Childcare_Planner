@@ -8,3 +8,11 @@
   display: grid;
   gap: 12px;
 }
+
+h1 {
+  font-family: 'Fascinate', system-ui, sans-serif;
+}
+
+body {
+  font-family: 'Englebert', system-ui, sans-serif;
+}

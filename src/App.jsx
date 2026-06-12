@@ -1,16 +1,30 @@
 import './App.css'
+import ParseRota from './ParseRota/ParseRota'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
 
-function App() {
+
+const App = () => {
   return (
-    <main className="app">
-      <section className="intro">
-        <h1>Childcare Planner</h1>
-        <p>
+      <Container className="App" maxWidth="md">
+        <Typography
+          variant="h1"
+          component="h1"
+          sx={{ fontFamily: "'Fascinate', system-ui, sans-serif" }}
+        >
+          Childcare Planner
+        </Typography>
+        <Typography
+          variant="h6"
+           sx={{ fontFamily: "'Englebert', system-ui, sans-serif" }}
+        >
           A personal planning tool for turning rota text into a monthly
           childcare plan.
-        </p>
-      </section>
-    </main>
+        </Typography>
+        <ParseRota />
+    </Container>
+
+
   )
 }
 
