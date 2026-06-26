@@ -4,6 +4,8 @@ Childcare Planner is a personal React project for planning childcare one month i
 
 The app is intended to help coordinate work days, London office days, partner rota shifts, family availability, school terms, school holidays, and school activities in one simple planning view.
 
+Live app: https://dr3amcoder.github.io/Childcare_Planner/
+
 ## Problem Statement
 
 Planning childcare manually can become difficult because the information comes from several places:
