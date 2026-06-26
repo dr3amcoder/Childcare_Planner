@@ -12,11 +12,12 @@ const ParseRota = () => {
   const [rotaText, setRotaText] = useState("");
   const [parsedRows, setParsedRows] = useState([]);
 
-  const parseDataHandler = (rotaText) => {
-    const lines = rotaText.split("\n");
-    console.log(lines);
+  const parseDataHandler = () => {
+    const lines = rotaText
+      .split("\n")
+      .filter((line) => line.trim() !== "");
 
-    return lines;
+    setParsedRows(lines);
   };
 
   return (

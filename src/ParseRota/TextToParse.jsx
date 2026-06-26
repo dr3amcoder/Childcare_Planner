@@ -31,7 +31,7 @@ const TextToParse = ({ rotaText, setRotaText, onParse }) => {
           />
           <br />
           <br />
-          <Button variant="contained" onClick={() => onParse(rotaText)}>
+          <Button variant="contained" onClick={onParse}>
             Parse data
           </Button>
         </AccordionDetails>

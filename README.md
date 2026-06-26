@@ -214,15 +214,29 @@ If the app later needs to store real personal information, safer options should 
 
 ## GitHub Pages Deployment Plan
 
-The project can eventually be deployed to GitHub Pages as a static Vite app.
+The project is configured to deploy to GitHub Pages as a static Vite app.
 
 Before enabling deployment:
 
 - Confirm the repository does not contain real personal data
 - Confirm the app does not bundle real rota or school data
 - Confirm no secrets are present in the code or build output
-- Add the correct Vite `base` setting for the GitHub repository name
-- Add a GitHub Pages deployment workflow or use the `gh-pages` package
+- Confirm Vite `base` is set to `/Childcare_Planner/`
+- Confirm GitHub Pages is using GitHub Actions as the deployment source
+
+After pushing to GitHub:
+
+1. Open the GitHub repository.
+2. Go to **Settings**.
+3. Go to **Pages**.
+4. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+5. Push to `main`, or manually run the **Deploy to GitHub Pages** workflow from the **Actions** tab.
+
+Expected live URL:
+
+```text
+https://dr3amcoder.github.io/Childcare_Planner/
+```
 
 ## Development Commands
 

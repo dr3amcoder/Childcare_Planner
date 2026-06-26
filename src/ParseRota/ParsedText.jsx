@@ -25,7 +25,7 @@ const ParsedText = ({ parsedRows }) => {
             multiline
             rows={8}
             fullWidth
-            value={parsedRows}
+            value={parsedRows.join("\n")}
           />
         </AccordionDetails>
       </Accordion>
